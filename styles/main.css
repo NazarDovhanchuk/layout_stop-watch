@@ -23,8 +23,8 @@
     border: solid 1 #5f98a8;
     background-color: #5f98a8;
     transform-origin: bottom center;
-    -webkit-animation: seconds 60s linear infinite;
-            animation: seconds 60s linear infinite; }
+    -webkit-animation: time 60s linear infinite;
+            animation: time 60s linear infinite; }
   .clock__minute {
     position: absolute;
     right: 50%;
@@ -36,28 +36,16 @@
     background-color: #dc143c;
     border-radius: 10px;
     transform-origin: bottom center;
-    -webkit-animation: minute 3600s linear infinite;
-            animation: minute 3600s linear infinite; }
+    -webkit-animation: time 3600s linear infinite;
+            animation: time 3600s linear infinite; }
 
-@-webkit-keyframes seconds {
+@-webkit-keyframes time {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
 
-@keyframes seconds {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes minute {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
-@keyframes minute {
+@keyframes time {
   from {
     transform: rotate(0deg); }
   to {
